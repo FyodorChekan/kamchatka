@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Экотропы Камчатки
+  version: 1.0.0
+servers:
+  - url: http:/localhost:8080
+tags:
+  - name: eco
+    description: Ресты получения данных по экологии
+paths:
+  /eco:
+    get:
+      tags:
+        - eco
+      description: Получение данных по экологии
+      operationId: getEcoInfo
+      responses:
+        '200':
+          description: Успешный ответ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EcoResponse'
+        '400':
+          description: Invalid route
+        '404':
+          description: Info not found
+        '422':
+          description: Validation exception
+components:
+  schemas:
+    EcoResponse:
+      type: object
+      properties:
+        dioxidAzot:
+          type: integer
+          example: 10
+        dioxidSera:
+          type: integer
+          example: 198772
+        formaldegid:
+          type: integer
+          example: 7
+        oxidUglerod:
+          type: integer
+          example: 5
+        vzveshennieVeshestva:
+          type: integer
+          example: 1
