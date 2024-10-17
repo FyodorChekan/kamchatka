@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #1b5e20; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+
+/* .header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+} */
+
+.park {
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.park-image {
+  position: relative;
+  width: 100%;
+  height: 200px; 
+}
+
+.park-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.park-title {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.park-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.park-title p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 380px;
+  border-radius: 20px;
+}
+
+.swiper-slide h3 {
+  bottom: 110px;
+  left: 40px;
+}
+
+.info-section {
+    background-color: #1b5e20;
+    color: #f5f5dc; 
+    padding: 20px; 
+    border-radius: 20px;
+}
+
+.info-section h2 {
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+h3 {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    color: white; 
+    font-size: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    z-index: 10; 
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    color: #f5f5dc !important;
+    height: 25% !important;
+    width: 60px !important;
+    top: 20% !important; 
+    margin-top: 0 !important;
+}
+
+.swiper-button-prev {
+   left: 0px !important;
+} 
+
+.swiper-button-next {
+    right: 0px !important;
+}

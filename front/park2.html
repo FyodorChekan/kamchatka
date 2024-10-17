@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заповедник</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="info-section">
+        <h2 id="info-title">Общая информация о заповеднике</h2>
+        <p id="info-content">
+            «Вилючинский» - самый молодой из сети природных парков «Вулканы Камчатки». Парк создан 28 декабря 2022 года. Главная достопримечательность - вулкан Вилючинская сопка (2173 м). Часть парка находится в границах объекта всемирного населения по эгидой ЮНЕСКО.
+        </p>
+    </div>
+    <div class="container">
+        <div class="trail-info-header">
+            <h2 id="trail-title">Выберите тропу, чтобы увидеть информацию</h2>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="showTrailInfo('ViluchinskiyVodopad')">
+                    <img src="static/Viluchinskiy-vodopad.jpg" alt="ViluchinskiyVodopad">
+                    <h3>Вилючинский водопад</h3>
+                </div>
+                <div class="swiper-slide" onclick="showTrailInfo('ViluchinskyVulkan')">
+                    <img src="static/Viluchinsky-vulkan.jpg" alt="ViluchinskyVulkan">
+                    <h3>Вилючинский вулкан</h3>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="trail-info-section">
+            <h2 id="trail-info-title"></h2>
+            <p id="trail-info-content"></p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

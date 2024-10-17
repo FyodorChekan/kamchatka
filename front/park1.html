@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заповедник</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="info-section">
+        <h2 id="info-title">Общая информация о заповеднике</h2>
+        <p id="info-content">
+            Вулканы Авачинский и Корякский, относящиеся к природному парку «Налычево», стали символами Петропавловска-Камчатского.
+            Они находятся в 30 километрах от города, и их снежные конусы видны практически с любой улицы города.
+        </p>
+    </div>
+    <div class="container">        
+
+        <div class="trail-info-header">
+            <h2 id="trail-title">Выберите тропу, чтобы увидеть информацию</h2>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="showTrailInfo('Pinachevo')">
+                    <img src="static/Pinachevo.jpg" alt="Pinachevo">
+                    <h3>Пиначево</h3>
+                </div>
+                <div class="swiper-slide" onclick="showTrailInfo('Avachinsky')">
+                    <img src="static/Avachinsky.jpg" alt="Avachinsky">
+                    <h3>Авачинский</h3>
+                </div>
+                <div class="swiper-slide" onclick="showTrailInfo('Dzendzur')">
+                    <img src="static/dzendzur-vulkan.jpg" alt="Dzendzur">
+                    <h3>Вулкан Дзендзур</h3>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="trail-info-section">
+            <h2 id="trail-info-title"></h2>
+            <p id="trail-info-content"></p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
