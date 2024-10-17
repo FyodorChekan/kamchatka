@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заповедник</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="info-section">
+        <h2 id="info-title">Общая информация о заповеднике</h2>
+        <p id="info-content">
+            Наиболее притягательные для туристов точки - это достопримечательности Природного парка «Южно-Камчатский».
+            Парк функционирует с 1995 года и пользуется неизменной популярностью. Включен в список Всемирного природного и культурного наследия ЮНЕСКО.
+        </p>
+    </div>
+    <div class="container">
+        <div class="trail-info-header">
+            <h2 id="trail-title">Выберите тропу, чтобы увидеть информацию</h2>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" onclick="showTrailInfo('VulkanGorelyi')">
+                    <img src="static/vulkan-gorely.jpg" alt="VulkanGorelyi">
+                    <h3>Вулкан Горелый</h3>
+                </div>
+                <div class="swiper-slide" onclick="showTrailInfo('KanuonOpasnyi')">
+                    <img src="static/opasnyi.jpg" alt="KanuonOpasnyi">
+                    <h3>Каньон Опасный</h3>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="trail-info-section">
+            <h2 id="trail-info-title"></h2>
+            <p id="trail-info-content"></p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

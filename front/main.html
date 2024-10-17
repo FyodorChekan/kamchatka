@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Природные парки Камчатки</title>
+  <link rel="stylesheet" href="styles.css?v=1.1">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body onload="graphql();">
+  <header class="header">
+    <h1>Камчатский край</h1>
+  </header>
+
+  <div class="ecoground">
+    <p>Экологическая обстановка</p>
+    <br>
+    <div class="loader" id="loader"></div>
+
+    <table id="result" align="left" width="300px">
+    </table>
+  </div>
+
+  <main>
+    <section class="park">
+    <a href="park1.html?park=nalichevo" class="park-link">
+      <div class="park-image">
+        <img src="static/main/nalychevo.jpg" alt="Налычево" />
+        <div class="park-title">
+          <h2>Налычево</h2>
+          <p>Природный парк</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="park">
+    <a href="park2.html?park=viluchinsky" class="park-link">
+      <div class="park-image">
+        <img src="static/main/viluchinsky.jpg" alt="Вилючинский" />
+        <div class="park-title">
+          <h2>Вилючинский</h2>
+          <p>Природный парк</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="park">
+    <a href="park3.html?park=ujno" class="park-link">
+      <div class="park-image">
+        <img src="static/main/south-kamchatka.jpg" alt="Южно-Камчатский" />
+        <div class="park-title">
+          <h2>Южно-Камчатский</h2>
+          <p>Природный парк</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="park">
+    <a href="park4.html?park=bystrinskiy" class="park-link">
+      <div class="park-image">
+        <img src="static/main/bystrinsky.jpg" alt="Быстринский" />
+        <div class="park-title">
+          <h2>Быстринский</h2>
+          <p>Природный парк</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="park">
+    <a href="park5.html?park=kluchevskoy" class="park-link">
+        <div class="park-image">
+          <img src="static/main/kluchevskoy.jpg" alt="Быстринский" />
+          <div class="park-title">
+            <h2>Ключевской</h2>
+            <p>Природный парк</p>
+          </div>
+        </div>
+      </section>
+
+  </main>
+<script src="api.js"></script>
+</body>
+</html>
